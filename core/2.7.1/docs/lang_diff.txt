@@ -1,0 +1,663 @@
+언어 차이
+=====================
+
+다음은 버전별 언어 차이입니다.
+
+================================
+2025/03/30: 버전 2.7.0-베타(이전에는 2.5.12-베타로 출시됨)
+================================
+/htdocs/modules/system/언어/english/admin.php
+- 정의('_AM_SYSTEM_MENUS', '메뉴')를 추가했습니다.
+- Define('_AM_SYSTEM_MENUS_DESC', '사이트 탐색 메뉴 관리')가 추가되었습니다.
+
+/htdocs/modules/system/언어/english/modinfo.php
+- 정의('_MI_SYSTEM_MENUS_ACTIVE', '메뉴 시스템 활성화')를 추가했습니다.
+- Define('_MI_SYSTEM_MENUS_ACTIVE_DESC', '사이트 탐색을 위한 내장 메뉴 관리 시스템 활성화')를 추가했습니다.
+
+/htdocs/modules/system/언어/english/admin/menus.php (새 파일)
+- Define('_AM_SYSTEM_MENUS_NAV_MAIN', '메뉴 관리자')를 추가했습니다.
+- 정의('_AM_SYSTEM_MENUS_NAV_BACK', '메뉴 목록으로 돌아가기')를 추가했습니다.
+- ​​Define('_AM_SYSTEM_MENUS_NAV_CATEGORY', '범주 보기')를 추가했습니다.
+- Define('_AM_SYSTEM_MENUS_NAV_TIPS', '<strong>팁:</strong><ul>...')을 추가했습니다.
+- 정의('_AM_SYSTEM_MENUS_ACTIVE', '활성')을 추가했습니다.
+- Define('_AM_SYSTEM_MENUS_ACTIVE_YES', 'Enabled')를 추가했습니다.
+- Define('_AM_SYSTEM_MENUS_ACTIVE_NO', 'Disabled')를 추가했습니다.
+- 정의를 추가했습니다('_AM_SYSTEM_MENUS_SAVED', '성공적으로 저장되었습니다');
+- 추가됨 Define('_AM_SYSTEM_MENUS_DELETED', '성공적으로 삭제됨');
+- Define('_AM_SYSTEM_MENUS_ORDER_SAVED', '주문 저장됨')을 추가했습니다.
+- 정의('_AM_SYSTEM_MENUS_LISTCAT', '목록 카테고리')를 추가했습니다.
+- 정의('_AM_SYSTEM_MENUS_LISTITEM', '목록 항목')을 추가했습니다.
+- ​​정의 추가('_AM_SYSTEM_MENUS_ADDCAT', '카테고리 추가');
+- 정의('_AM_SYSTEM_MENUS_EDITCAT', '카테고리 편집')을 추가했습니다.
+- 정의('_AM_SYSTEM_MENUS_DELCAT', '카테고리 삭제')를 추가했습니다.
+- 정의('_AM_SYSTEM_MENUS_CATTITLE', '범주 제목')을 추가했습니다.
+- Define('_AM_SYSTEM_MENUS_CATTITLE_DESC', '언어 상수 이름(예: MENUS_HOME)을 여기에서 사용하여 레이블을 번역할 수 있습니다.');
+- 정의('_AM_SYSTEM_MENUS_CATPREFIX', '접두사(HTML)')를 추가했습니다.
+- Define('_AM_SYSTEM_MENUS_CATPREFIX_DESC', 'Font Awesome 아이콘과 같이 카테고리 제목 앞에 표시되는 선택적 마크업.');
+- 정의('_AM_SYSTEM_MENUS_CATSUFFIX', '접미사(HTML)')를 추가했습니다.
+- 정의를 추가했습니다('_AM_SYSTEM_MENUS_CATSUFFIX_DESC', '카테고리 제목 뒤에 표시되는 선택적 마크업.');
+- Define('_AM_SYSTEM_MENUS_CATURL', 'URL')을 추가했습니다.
+- Define('_AM_SYSTEM_MENUS_CATURL_DESC', ''index.php' 또는 절대 URL과 같은 카테고리 자체에 대한 링크');
+- ​​Define('_AM_SYSTEM_MENUS_CATTARGET', '링크 대상')을 추가했습니다.
+- 정의('_AM_SYSTEM_MENUS_CATPOSITION', '위치')를 추가했습니다.
+- added Define('_AM_SYSTEM_MENUS_DELCAT_CONFIRM', '정말로 "%s" 카테고리와 해당 항목을 모두 삭제하시겠습니까?');
+- 정의('_AM_SYSTEM_MENUS_ADDITEM', '항목 추가')를 추가했습니다.
+- Define('_AM_SYSTEM_MENUS_EDITITEM', '항목 편집')을 추가했습니다.
+- Define('_AM_SYSTEM_MENUS_DELITEM', '항목 삭제')를 추가했습니다.
+- ​​Define('_AM_SYSTEM_MENUS_ITEMTITLE', '항목 제목')을 추가했습니다.
+- 추가됨 Define('_AM_SYSTEM_MENUS_ITEMTITLE_DESC', '언어 상수 이름을 여기서 사용할 수 있으므로 레이블을 번역할 수 있습니다.');
+- 정의('_AM_SYSTEM_MENUS_ITEMPREFIX', '접두사(HTML)')를 추가했습니다.
+- ​​Define('_AM_SYSTEM_MENUS_ITEMPREFIX_DESC', 'Font Awesome 아이콘과 같이 항목 제목 앞에 표시되는 선택적 마크업.');
+- 정의('_AM_SYSTEM_MENUS_ITEMSUFFIX', '접미사(HTML)')를 추가했습니다.
+- Define('_AM_SYSTEM_MENUS_ITEMSUFFIX_DESC', '항목 제목 뒤에 표시되는 선택적 마크업. <{xoInboxCount}> 자리 표시자를 지원합니다.');
+- Define('_AM_SYSTEM_MENUS_ITEMURL', 'URL')을 추가했습니다.
+- 정의('_AM_SYSTEM_MENUS_ITEMTARGET', '링크 대상')을 추가했습니다.
+- 정의('_AM_SYSTEM_MENUS_ITEMPOSITION', '위치')를 추가했습니다.
+- Define('_AM_SYSTEM_MENUS_ITEMPARENT', '상위 항목')을 추가했습니다.
+- 정의('_AM_SYSTEM_MENUS_ITEMCATEGORY', '카테고리')를 추가했습니다.
+- ​​added Define('_AM_SYSTEM_MENUS_DELITEM_CONFIRM', '정말로 "%s" 항목과 해당 하위 항목을 삭제하시겠습니까?');
+- Define('_AM_SYSTEM_MENUS_TARGET_SELF', '같은 창')을 추가했습니다.
+- Define('_AM_SYSTEM_MENUS_TARGET_BLANK', '새 창')을 추가했습니다.
+- Define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_CATEGORY', '이 카테고리를 볼 수 있는 그룹')을 추가했습니다.
+- Define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_CATEGORY_DESC', '해당 항목을 표시하려면 사용자에게 카테고리 액세스 권한이 있어야 합니다.');
+- Define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_ITEM', '이 항목을 볼 수 있는 그룹')을 추가했습니다.
+- Define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_ITEM_DESC', '항목 권한은 상위 카테고리 권한 이후에 확인됩니다.');
+- 정의를 추가했습니다('_AM_SYSTEM_MENUS_ERROR_CATNOTFOUND', '카테고리를 찾을 수 없음');
+- 정의를 추가했습니다('_AM_SYSTEM_MENUS_ERROR_CATPROTECTED', '보호된 카테고리를 삭제할 수 없습니다');
+- 추가됨 Define('_AM_SYSTEM_MENUS_ERROR_CATINACTIVE', '활성화할 수 없음: 카테고리가 비활성 상태입니다.');
+- Define('_AM_SYSTEM_MENUS_ERROR_ITEMNOTFOUND', '항목을 찾을 수 없음')을 추가했습니다.
+- 정의를 추가했습니다('_AM_SYSTEM_MENUS_ERROR_ITEMPROTECTED', '보호된 항목을 삭제할 수 없습니다');
+- 정의 추가('_AM_SYSTEM_MENUS_ERROR_ITEMPARENT', '잘못된 상위 항목 선택');
+- 정의를 추가했습니다('_AM_SYSTEM_MENUS_ERROR_ITEMCYCLE', '상위 항목을 설정할 수 없습니다. 순환 참조가 생성됩니다.');
+- Define('_AM_SYSTEM_MENUS_ERROR_ITEMDEPTH', '최대 중첩 깊이(3레벨) 초과');를 추가했습니다.
+- 정의를 추가했습니다('_AM_SYSTEM_MENUS_ERROR_PARENTINACTIVE', '활성화할 수 없습니다: 상위 항목이 비활성 상태입니다.');
+- Define('_AM_SYSTEM_MENUS_ERROR_NOITEMS', '이 카테고리에는 하위 메뉴 항목이 없습니다.')가 추가되었습니다.
+- 정의를 추가했습니다('_AM_SYSTEM_MENUS_ERROR_ITEMEDIT', '편집하기 전에 이 항목을 활성화하세요');
+- 정의를 추가했습니다('_AM_SYSTEM_MENUS_ERROR_ITEMDISABLE', '삭제하기 전에 이 항목을 활성화하세요');
+- 정의('MENUS_HOME', '홈')이 추가되었습니다.
+- 정의('MENUS_ADMIN', '관리')가 추가되었습니다.
+- 정의('MENUS_ACCOUNT', '계정')을 추가했습니다.
+- Define('MENUS_ACCOUNT_EDIT', '계정 편집')을 추가했습니다.
+- 정의('MENUS_ACCOUNT_LOGIN', '로그인')을 추가했습니다.
+- ​​정의('MENUS_ACCOUNT_LOGOUT', '로그아웃')을 추가했습니다.
+- 정의('MENUS_ACCOUNT_REGISTER', '가입')을 추가했습니다.
+- 정의('MENUS_ACCOUNT_MESSAGES', '메시지')를 추가했습니다.
+- 정의('MENUS_ACCOUNT_NOTIFICATIONS', '알림')을 추가했습니다.
+- Define('MENUS_ACCOUNT_TOOLBAR', 'Toolbar')를 추가했습니다.
+
+/htdocs/modules/system/constants.php
+- 정의('XOOPS_SYSTEM_MENUS', 19)를 추가했습니다.
+
+/htdocs/modules/system/언어/english/blocks.php
+-add Define('_MB_SYSTEM_WAITING_CONTENT_DEPRECATED', "'대기 콘텐츠' 차단은 XOOPS 2.5.11부터 더 이상 사용되지 않습니다. 대기 모듈을 사용하십시오.");
+
+/htdocs/install/언어/english/welcome.php
+- PHP 및 MySQL 버전 업데이트
+
+/htdocs/modules/pm/언어/english/main.php
+- 업데이트됨 Define('_MD_PM_EMAIL_DESC', '%s님께, 이것은 귀하의 계정 ' . $GLOBALS['xoopsConfig']['sitename'])에서 전송된 메시지입니다.
+- 업데이트됨 Define('_MD_PM_EMAIL_DESC', '%s님, 이것은 ' . $GLOBALS['xoopsConfig']['sitename']) 계정에서 전송된 메시지입니다.
+
+/htdocs/언어/english/user.php
+- 업데이트됨 Define('_US_SORRYNOTFOUND', '죄송합니다. 해당 사용자 정보를 찾을 수 없습니다.');
+- update Define('_US_SORRYNOTFOUND', '계정이 제공된 정보와 일치하면 요청을 처리하겠습니다. 곧 이메일을 받지 못한 경우 스팸 폴더를 확인하거나 사이트 관리자에게 문의하세요.');
+
+- 업데이트된 Define('_US_PWDMAILED', '%s의 비밀번호가 메일로 전송되었습니다.');
+- update Define('_US_PWDMAILED', '이 이메일에 대한 계정이 있으면 비밀번호 재설정 지침을 받게 됩니다. 필요한 경우 스팸 폴더를 확인하거나 사이트 관리자에게 문의하세요.');
+
+- 업데이트됨 Define('_US_CONFMAIL', '%s에 대한 확인 이메일이 발송되었습니다.');
+- 업데이트됨 Define('_US_CONFMAIL', '이 이메일에 대한 계정이 존재하는 경우 비밀번호 재설정 지침을 받게 됩니다. 필요한 경우 스팸 폴더를 확인하거나 사이트 관리자에게 문의하세요.');
+
+/htdocs/class/xoopseditor/tinymce5/언어/english.php
+- _XOOPS_EDITOR_TINYMCE_LANGUAGE5의 이름을 _XOOPS_EDITOR_TINYMCE5_LANGUAGE로 변경했습니다.
+
+/htdocs/modules/system/themes/transition/언어/english/admin.php
+- _OXYGEN_Server_API의 이름이 _OXYGEN_SERVER_API로 변경되었습니다.
+
+/htdocs/modules/system/언어/english/admin/preferences.php.
+- Define('_MD_AM_SENDMAIL_NOT_FOUND', 'Sendmail 바이너리를 찾을 수 없습니다. 서버 구성을 확인하십시오.');
+- Define('_MD_AM_SENDMAIL_HELP_MISSING_BIN', '유효한 sendmail 호환 바이너리가 감지되지 않았습니다. MTA(예: Postfix, msmtp)를 설치하거나 기본 설정에서 SMTP로 전환하세요.');
+
+/htdocs/modules/system/언어/english/admin/users.php
+- 정의 추가('_AM_SYSTEM_USERS_UNKNOWN_GROUP', '알 수 없는 그룹');
+
+/htdocs/modules/system/언어/english/comment.php
+- 정의 추가('_CM_ADDCOMMENT', '댓글 추가');
+
+
+/htdocs/install/언어/english/install.php
+- Define('_WEBSITE_NAME', 'XOOPS 사이트')를 추가했습니다.
+- 정의를 추가했습니다('_WEBSITE_SLOGAN', '그냥 사용하세요!');
+- Define('_WEBSITE_META_KEYWORDS', 'xoops, 웹 애플리케이션 프레임워크, cms, 콘텐츠 관리 시스템')을 추가했습니다.
+- 추가된 Define('_WEBSITE_FOOTER', "Powered by XOOPS © 2001-{X_YEAR} <a href='https://xoops.org' rel='external' title='XOOPS 프로젝트'>XOOPS 프로젝트</a>");
+- 정의 추가('_WEBSITE_COPYRIGHT', '저작권 © 2001-{X_YEAR}');
+- Define('_WEBSITE_DESCRIPTION', 'XOOPS는 PHP로 작성된 동적 객체 지향 기반 오픈 소스 포털 스크립트입니다.');
+- 정의('_WEBSITE_CENSOR_REPLACE', 'OOPS')를 추가했습니다.
+
+
+================================
+2023/10/01: 버전 2.5.11-최종
+================================
+/언어/english/uploader.php
+-add Define('_ER_UP_MODE_NOT_CHANGED', '파일이 업로드되었으나 모드를 변경할 수 없습니다.');
+
+================================
+2023/10/01: 버전 2.5.11-RC3
+================================
+
+변경된 파일:
+업그레이드/언어/영어/upgrade.php
+업그레이드/언어/english/smarty3.php
+
+htdocs/class/xoopseditor/tinymce/언어/english.php
+- 정의를 추가했습니다('_FAILGETIMG', '이미지를 가져오지 못했습니다 %s');
+
+/htdocs/modules/system/언어/english/modinfo.php
+- 정의 추가('_MI_DEFAULT_NOTIFICATION_METHOD_DISABLE', '일시적으로 비활성화');
+- 정의 추가('_MI_DEFAULT_NOTIFICATION_METHOD_EMAIL', '이메일');
+- ​​Define('_MI_DEFAULT_NOTIFICATION_METHOD_PM', '비공개 메시지')를 추가했습니다.
+
+/htdocs/modules/system/언어/english/admin/preferences.php
+- Define('_MD_AM_DEFAULT_NOTIFICATION_METHOD', '기본 알림 방법')을 추가했습니다.
+- 추가됨 Define('_MD_AM_DEFAULT_NOTIFICATION_METHOD_DESC', '새 사용자가 포럼 등의 알림을 구독하는 경우.');
+- 정의('_MD_AM_MODULEPREF',
+
+
+================================
+2023/03/19: 버전 2.5.11-RC1
+================================
+
+변경된 파일:
+htdocs/언어/english/global.php
+- 정의 추가('_DB_QUERY_ERROR', '쿼리 실패! SQL: %s - 오류: ');
+- 정의('_PRINT', '인쇄')가 추가되었습니다.
+- 정의('_PDF', 'PDF')를 추가했습니다.
+- ​​정의('_OFF', 'Off')가 추가되었습니다.
+
+================================
+2021/09/02: 버전 2.5.11-베타
+================================
+
+변경된 파일:
+htdocs/언어/english/admin.php
+- 정의를 추가했습니다('_AD_WARNING_NO_XML', '이 함수에는 PHP XML 확장이 필요합니다.');
+
+htdocs/xoops_lib/modules/protector/언어/english/admin.php
+- Define('_AM_ADMINSTATS_LAST_MONTH', '지난 달')을 추가했습니다.
+- 정의 추가('_AM_ADMINSTATS_LAST_WEEK', '지난 주');
+- 정의를 추가했습니다('_AM_ADMINSTATS_LAST_DAY', '마지막 날');
+- ​​정의 추가('_AM_ADMINSTATS_LAST_HOUR', '지난 시간');
+
+htdocs/언어/english/global.php
+- 정의('_PRINT', '인쇄')가 추가되었습니다.
+- 정의('_PDF', 'PDF')를 추가했습니다.
+- ​​정의('_OFF', 'Off')가 추가되었습니다.
+- 변경된 Define('_ON', 'On'); //'on'부터
+
+htdocs/언어/english/global.php
+- ​​변경된 Define('_SIZE', 'Size'); //글꼴 크기
+- 변경된 Define('_FONT', 'Font'); // 글꼴 계열
+- 변경된 Define('_COLOR', 'Color'); //글꼴 색상
+
+htdocs/install/언어/english/install.php
+- 정의를 추가했습니다('ERR_COPY_CONFIG_FILE', '구성 파일 %s을(를) 복사할 수 없습니다');
+
+htdocs/install/언어/english/welcome.php
+- 권장 PHP 및 MySQL 버전이 변경되었으며 링크가 "https:"로 변경되었습니다.
+
+htdocs/modules/system/언어/english/admin/preferences.php
+- 변경됨 Define('_MD_AM_SMTPHOSTDESC', '단일 호스트 이름 또는 여러 개의 세미콜론으로 구분된 호스트 이름.<br>또한 다음 형식을 사용하여 각 호스트에 대해 서로 다른 포트를 지정할 수 있습니다: [호스트 이름:포트](예: "smtp1.example.com:25;smtp2.example.com").<br>암호화 유형도 지정할 수 있습니다. 예:(예: "tls://smtp1.example.com:587;ssl://smtp2.example.com:465").<br>호스트가 순서대로 시도됩니다.');
+
+htdocs/modules/system/언어/english/help/blocksadmin.html
+
+htdocs/modules/system/언어/english/admin/modulesadmin.php
+- 변경된 Define('_AM_SYSTEM_MODULES_ADMIN', 'XOOPS 모듈 관리');
+
+새 파일:
+htdocs/themes/xswatch4/언어/english/main.php
+xswatch/언어/english/main.php의 복사본으로 시작한 후:
+- 정의('THEME_TOOLBAR_DEBUGMODE', '디버그 모드')가 추가되었습니다.
+- 정의('THEME_TOOLBAR_THIS_MODULE', '이 모듈')을 추가했습니다.
+- 정의('THEME_PERMISSIONS_LEGEND', '권한 및 범례')를 추가했습니다.
+/class/captcha/config.php에서
+- 정의('THEME_INBOX_ALERT', 'PM 경고')를 추가했습니다.
+- Define('THEME_INBOX_LINK', '받은 편지함을 보려면 여기를 클릭하세요!')를 추가했습니다.
+- 정의('THEME_EVENT_DOWNLOADS', '이벤트 다운로드')를 추가했습니다.
+- ​​정의('THEME_FILE_NAME', '파일')을 추가했습니다.
+- 정의('THEME_FILE_SIZE', '크기')를 추가했습니다.
+- 정의('THEME_CONTROL_NEXT', '다음')을 추가했습니다.
+- 정의('THEME_Control_PREVIOUS', '이전')가 추가되었습니다.
+
+htdocs/언어/english/user.php
+- 정의를 추가했습니다('_US_DESCRIPTIONMIN', '최소 필수 길이: %s');
+- 정의를 추가했습니다('_US_DESCRIPTIONMAX', '최대 길이: %s');
+
+htdocs/modules/system/언어/english/admin/mailusers.php
+- 정의 추가('_AM_SYSTEM_MAILUSERS_MAILTAGS5', '{X_NAME}은 비어 있으면 이름 또는 이름 없음을 인쇄합니다.');
+
+htdocs/modules/system/언어/english/admin/images.php
+- 추가됨 Define("_AM_SYSTEM_IMAGES_SCATDELNG","이 카테고리를 삭제할 수 없습니다.");
+
+htdocs/modules/system/언어/english/admin/modulesadmin.php
+- ​​정의 추가('_AM_SYSTEM_MODULES_INSTALL_THISMODULE', '이 모듈 관리자');
+
+삭제된 파일:
+htdocs/modules/system/언어/english/admin/users.php
+- 삭제된 Define('_AM_SYSTEM_USERS_MODIFYUSER', '사용자 수정');
+- 삭제된 Define('_AM_SYSTEM_USERS_DELUSER', '사용자 삭제');
+- 삭제된 Define('_AM_SYSTEM_USERS_GO', 'Go!');
+
+================================
+2019/04/29: 버전 2.5.10 최종
+================================
+추가/삭제된 정의:
+htdocs/xoops_lib/modules/protector/언어/english/admin.php
+- Define('_AM_LABEL_BAN_BY_IP', '확인된 기록의 IP 금지:')를 추가했습니다.
+- 정의('_AM_BUTTON_BAN_BY_IP', 'IP 금지!')를 추가했습니다.
+- Define('_AM_JS_BANCONFIRM', 'IP 차단 OK?')를 추가했습니다.
+- 정의 추가('_AM_MSG_BANNEDIP', 'IP가 금지되었습니다');
+- Define('_AM_ADMINSTATS_TITLE', '보호자 로그 요약')을 추가했습니다.
+
+htdocs/xoops_lib/modules/protector/언어/english/modinfo.php
+- 정의($constpref . '_ADMINSTATS', '개요')가 추가되었습니다.
+- ​​Define($constpref . '_BANIP_TIME0DSC', '자동 IP 차단을 위한 정지 시간(초)')을 추가했습니다.
+
+htdocs/언어/english/uploader.php
+- 정의를 추가했습니다('_ER_UP_INDEXNOTSET', '여러 파일을 가져오려면 인덱스를 설정해야 합니다.');
+
+htdocs/언어/english/admin.php
+- Define('_AD_WARNING_OLD_PHP', '경고: 최신 버전의 PHP로 업그레이드하는 것을 고려하십시오. 버전 %s 이상이 권장되며 향후 XOOPS 버전에서는 필요합니다.');
+
+정의가 변경됨
+htdocs/xoops_lib/modules/protector/언어/english/admin.php
+- 정의('_AM_TXT_HOWTOCHANGEDB',"접두사를 변경하려면<br> %s/data/secure.php를 수동으로 편집하세요.<br><br>define('XOOPS_DB_PREFIX', '<b>%s</b>');");
+
+htdocs/install/english/welcome.php
+- 권장 PHP 버전 변경, SELinux에 대한 특별 참고 사항 섹션 추가
+
+/home/richard/sites/x258i/htdocs/Frameworks/moduleclasses/moduleadmin/언어/english/main.php
+- in define of '_AM_MODULEADMIN_ADMIN_FOOTER', changed XOOPS links to 'https://xoops.org'
+
+새 파일:
+해당 사항 없음
+
+===============================
+2017/08/01: 버전 2.5.9 최종
+===============================
+정의가 추가/삭제되었습니다.
+
+htdocs/Frameworks/moduleclasses/moduleadmin/언어/english/main.php
+- 정의 추가('_AM_MODULEADMIN_ABOUT_AMOUNT', '금액');
+- Define('_AM_MODULEADMIN_ABOUT_AMOUNT_TTL', 'USD 금액(예: $25.00)을 입력하세요.');
+- 정의 추가('_AM_MODULEADMIN_ABOUT_AMOUNT_CURRENCY', 'USD');
+- 정의 추가('_AM_MODULEADMIN_ABOUT_AMOUNT_SUGGESTED', '25.00');
+- 추가된 Define('_AM_MODULEADMIN_ABOUT_AMOUNT_PATTERN', '\\$?[0-9]+(,[0-9]{3})*(\\.[0-9]{0,2})?$');
+- Define('_AM_MODULEADMIN_ABOUT_DONATE_IMG_ALT', 'PayPal이나 주요 신용카드를 사용하여 온라인으로 기부하세요!')를 추가했습니다.
+
+htdocs/install/언어/english/install.php
+*참고* 설치 프로그램이 크게 변경되었으므로 이 파일을 자세히 검토해야 합니다.
+- 정의("CURL_HTTP", "클라이언트 URL 라이브러리(cURL)")를 추가했습니다.
+- Define('XOOPS_COOKIE_DOMAIN_LABEL', '웹사이트용 쿠키 도메인')을 추가했습니다.
+- 추가된 Define('XOOPS_COOKIE_DOMAIN_HELP', '쿠키를 설정할 도메인. 비어 있을 수 있으며, URL의 전체 호스트(www.example.com) 또는 하위 도메인이 없는 등록된 도메인(example.com)을 하위 도메인(www.example.com 및 blog.example.com.)에서 공유할 수 있습니다.');
+- 정의('INTL_SUPPORT', '국제화 함수')가 추가되었습니다.
+- 정의('XOOPS_SOURCE_CODE', "GitHub의 XOOPS")를 추가했습니다.
+- 정의('XOOPS_INSTALLING', '설치 중')이 추가되었습니다.
+- 정의('XOOPS_ERROR_ENCOUNTERED', '오류')가 추가되었습니다.
+- 정의를 추가했습니다('XOOPS_ERROR_SEE_BELOW', '메시지는 아래를 참조하세요.');
+- ​​정의('MODULES_AVAILABLE', '사용 가능한 모듈')을 추가했습니다.
+- 정의('INSTALL_THIS_MODULE', '%s 추가')를 추가했습니다.
+
+htdocs/install/언어/english/finish.php
+- 신규 사용자에게 모듈 및 테마에 대한 정보를 제공하기 위해 xoops.org를 참조하도록 변경
+
+htdocs/언어/english/global.php
+- 정의('_UPLOAD', '업로드')가 추가되었습니다.
+- 정의('_SELECTFILES', '파일 선택')이 추가되었습니다.
+- 정의('_DROPFILESHERE', '여기에 파일 드롭')을 추가했습니다.
+- 정의('_RETRY', '재시도')가 추가되었습니다.
+- 정의('_OK', 'Ok')가 추가되었습니다.
+- 정의('_FORMATPROGRESS', '{total_size}의 {percent}%')를 추가했습니다.
+- ​​정의 추가('_FAILUPLOAD', '업로드 실패!');
+- 정의('_WAITINGFORRESPONSE', '처리 중...')을 추가했습니다.
+- Define('_PAUSED', 'Paused')가 추가되었습니다.
+- Define('_PROCESSINGDROPPEDFILES', '삭제된 파일 처리 중...')을 추가했습니다.
+- Define('_TYPEERROR', '{file}에 잘못된 확장자가 있습니다. 유효한 확장자: {extensions}!');
+- 정의를 추가했습니다('_SIZEERROR', '{file}이(가) 너무 큽니다. 최대 파일 크기는 {sizeLimit}입니다!');
+- 정의를 추가했습니다('_MINSIZEERROR', '{file}이(가) 너무 작습니다. 최소 파일 크기는 {minSizeLimit}입니다!');
+- Define('_EMPTYERROR', '{file}이 비어 있습니다. 비어 있는 파일을 다시 선택하세요!');
+- ​​정의 추가('_NOFILESERROR', '업로드할 파일이 없습니다!');
+- Define('_TOOMANYITEMSERROR', '너무 많은 항목({netItems})이 업로드됩니다. 항목 제한은 {itemLimit}입니다!');
+- 정의를 추가했습니다('_MAXHEIGHTIMAGEERROR', '이미지가 너무 큽니다!');
+- 정의를 추가했습니다('_MAXWIDTHIMAGEERROR', '이미지가 너무 넓습니다!');
+- 정의를 추가했습니다('_MINHEIGHTIMAGEERROR', '이미지의 높이가 충분하지 않습니다!');
+- 정의를 추가했습니다('_MINWIDTHIMAGEERROR', '이미지 너비가 충분하지 않습니다!');
+- Define('_RETRYFAILTOOMANYITEMS', '재시도 실패 - 파일 제한에 도달했습니다!')를 추가했습니다.
+- ​​added Define('_ONLEAVE', '파일을 업로드하는 중입니다. 지금 나가시면 업로드가 취소됩니다!');
+- added Define('_UNSUPPORTEDBROWSERIOS8SAFARI', '복구할 수 없는 오류 - 이 브라우저는 iOS8 Safari의 심각한 버그로 인해 어떤 종류의 파일 업로드도 허용하지 않습니다. Apple에서 이 문제를 해결할 때까지 iOS8 Chrome을 사용하세요!');
+
+htdocs/언어/english/uploader.php
+- Define('_ER_UP_INISIZE', '업로드된 파일이 php.ini의 upload_max_filesize 지시어를 초과합니다');를 추가했습니다.
+- Define('_ER_UP_FORMSIZE', '업로드된 파일이 HTML 양식에 지정된 MAX_FILE_SIZE 지시어를 초과합니다.');를 추가했습니다.
+- 추가 Define('_ER_UP_PARTIAL', '업로드된 파일이 부분적으로만 업로드되었습니다.');
+- 정의 추가('_ER_UP_NOFILE', '업로드된 파일이 없습니다.');
+- Define('_ER_UP_NOTMPDIR', '임시 폴더 누락')을 추가했습니다.
+- 정의를 추가했습니다('_ER_UP_CANTWRITE', '디스크에 파일을 쓰지 못했습니다');
+- Define('_ER_UP_EXTENSION', '확장 프로그램에 의해 파일 업로드가 중지되었습니다. phpinfo() 보기');를 추가했습니다.
+- Define('_ER_UP_UNKNOWN', '알 수 없는 업로드 오류')가 추가되었습니다.
+
+htdocs/언어/english/user.php
+- ​​삭제되었습니다. Define('_US_USECOOKIE', '내 사용자 이름을 1년 동안 쿠키에 저장합니다.');
+
+htdocs/modules/profile/언어/english/admin.php
+- Define('_PROFILE_AM_CANNOTDEACTIVATEWEBMASTERS', '웹마스터 계정을 비활성화할 수 없습니다');를 추가했습니다.
+
+htdocs/modules/system/언어/english/admin/comments.php
+- Define('_MP_DELETECOUNT', '그룹 구성원 수가 너무 많습니다(>4,000)');
+
+htdocs/modules/system/언어/english/admin/userrank.php
+- 정의('_AM_SYSTEM_USERRANK_ERROR', '오류')를 추가했습니다.
+
+업그레이드/언어/영어/upgrade.php
+- 정의('_LANGUAGE', '언어')를 추가했습니다.
+- 정의('_SUPPORT', '지원')이 추가되었습니다.
+- 정의('_XOOPS_SOURCE_CODE', 'GitHub의 XOOPS')를 추가했습니다.
+- 정의('_PATCH_COUNT', '패치 세트')를 추가했습니다.
+- Define('_USERNAME_PLACEHOLDER', '사용자 이름')을 추가했습니다.
+- 정의('_PASSWORD_PLACEHOLDER', '비밀번호')를 추가했습니다.
+- 정의('_CONTINUE', '계속')을 추가했습니다.
+- 정의('XOOPS_ERROR_ENCOUNTERED', '오류')가 추가되었습니다.
+- 정의를 추가했습니다('XOOPS_ERROR_SEE_BELOW', '메시지는 아래를 참조하세요.');
+
+htdocs/themes/xbootstrap/언어/english/main.php
+- 정의("THEME_USER_WELCOME", "환영합니다")가 추가되었습니다.
+
+새 파일:
+- htdocs/modules/system/themes/transition/언어/english/admin.php
+- htdocs/modules/system/themes/transition/언어/english/localsupport.php
+
+- 업그레이드/언어/영어/
+*참고* 업그레이드 코드가 크게 변경되었으므로 이 파일을 면밀히 검토해야 합니다.
+- 패치 디렉토리의 모든 패치 언어 파일을 업그레이드/언어/*로 이동했습니다.
+  즉, 업그레이드/upd-2.0.18-to-2.3.0/언어/english.php가 되었습니다.
+  업그레이드/언어/영어/upd-2.0.18-to-2.3.0.php
+
+- 업그레이드/언어/english/support.php (htdocs/install/언어/english/support.php와 동일)
+- 업그레이드/언어/영어/welcome.php
+
+===============================
+2016/05/27: 버전 2.5.8
+===============================
+정의가 추가/삭제되었습니다.
+
+/install/언어/english/install.php
+/modules/system/언어/english/admin/modulesadmin.php
+- 정의를 추가했습니다('_AM_SYSTEM_MODULES_INSTALL_MORE',"추가 모듈 설치");
+
+/모듈/시스템/언어/영어/admin/users.php
+정의('_AM_SYSTEM_USERS_ACTIVATE', '사용자 활성화');
+
+/modules/system/언어/english/blocks.php
+정의('_MB_SYSTEM_BLOCK_HEIGHT',"블록 높이(라인)");
+
+설치/언어/영어/install.php
+정의('CHMOD_CHGRP_REPEAT', '재시도');
+정의('CHMOD_CHGRP_IGNORE', '무엇이든 사용하세요');
+정의('CHMOD_CHGRP_ERROR', '설치 프로그램이 구성 파일 %1$s을 쓰지 못할 수 있습니다.<p>PHP는 사용자 %2$s 및 그룹 %3$s에서 파일을 쓰고 있습니다.<p>끔찍한 문제
+
+정의가 변경됨
+xoops_lib/modules/protector/언어/english/modinfo.php
+정의($constpref . '_HIJACK_TOPBITDSC', ...
+
+/modules/system/themes/default/언어/english/admin.php
+정의('_OXYGEN_CODESVN', '코드 저장소');
+
+설치/언어/영어/install.php
+정의('SAVED_MAINFILE', '설정이 저장되었습니다');
+정의('ERR_NEED_WRITE_ACCESS', '서버에는 다음 파일 및 폴더에 대한 쓰기 액세스 권한이 있어야 합니다<br />(예: UNIX/LINUX 서버의 <em>chmod 775 디렉토리 이름</em>)<br />사용할 수 없거나 올바르게 생성되지 않은 경우 수동으로 생성하고 적절한 권한을 설정하십시오.');
+정의('ERR_COPY_MAINFILE', '배포 파일을 %s에 복사할 수 없습니다.');
+정의('ERR_WRITE_MAINFILE', '%s에 쓸 수 없습니다. 파일 권한을 확인하고 다시 시도하십시오.');
+정의('ERR_READ_MAINFILE', '읽기 위해 %s을(를) 열 수 없습니다.');
+
+/modules/system/themes/zetadigme/언어/english/admin.php
+정의('_MD_CODESVN', '코드 저장소');
+
+새 파일:
+/언어/english/stopwords.php
+/언어/english/xmf.php
+
+업데이트된 XoopsMailerLocal 클래스 예:
+htdocs/언어/english/xoopsmailerlocal.php
+
+===============================
+2014/06/14: 버전 2.5.7 최종
+===============================
+정의가 추가/삭제되었습니다.
+
+/install/언어/english/install.php
+- Define('WRITTEN_LICENSE',"작성된 XOOPS %s 라이센스 키: <strong>%s</strong>");
+
+===============================
+2014/03/18: 버전 2.5.7 RC1
+===============================
+정의가 추가/삭제되었습니다.
+
+/모듈/시스템/언어/english/admin.php
+- 정의('_AM_SYSTEM_USAGE',"사용법")을 추가했습니다.
+- 정의('_AM_SYSTEM_ACTIVE',"Active")를 추가했습니다.
+
+
+===============================
+2012/04/15: 버전 2.5.5
+===============================
+정의가 추가/삭제되었습니다.
+
+/Frameworks/moduleclasses/moduleadmin/언어/english/main.php
+- 정의("_AM_MODULEADMIN_HOME", "홈")이 추가되었습니다.
+- 정의("_AM_MODULEADMIN_DASHBOARD", "대시보드")를 추가했습니다.
+- 정의("_AM_MODULEADMIN_ABOUT", "정보")를 추가했습니다.
+- 정의("_AM_MODULEADMIN_PERMISSIONS", "권한")을 추가했습니다.
+- 정의 추가됨("_AM_MODULEADMIN_ABOUT_RELEASEDATE","출시됨: ");
+- 정의 추가됨("_AM_MODULEADMIN_ABOUT_AUTHOR","저자: ");
+- 정의 추가됨("_AM_MODULEADMIN_ABOUT_CREDITS","크레딧: ");
+- 정의 추가됨("_AM_MODULEADMIN_ABOUT_LICENSE","라이센스: ");
+- 추가된 Define("_AM_MODULEADMIN_ABOUT_AUTHOR_NAME","저자 이름: ");
+- Define("_AM_MODULEADMIN_ABOUT_AUTHOR_INFO","저자 정보")를 추가했습니다.
+- 추가된 Define("_AM_MODULEADMIN_ADMIN_FOOTER", "<div class='center smallsmall italic pad5'>이 모듈은 <a class='tooltip' rel='external' href='http://xoops.org/' title='Visit XOOPS Community'>XOOPS Community</a></div>")에 의해 관리됩니다.
+
+/언어/english/calendar.php
+- 정의("_CAL_FORMAT","Y-m-d")가 추가되었습니다.
+
+/xoops_lib/modules/protector/언어/english/modinfo.php
+
+- 추가된 Define($constpref."_ADMINHOME","Home");
+- 추가된 Define($constpref."_ADMINABOUT","About");
+- 정의($constpref.'_STOPFORUMSPAM_ACTION','포럼 스팸 중지')를 추가했습니다.
+- Define($constpref.'_STOPFORUMSPAM_ACTIONDSC','www.stopforumspam.com 데이터베이스에 등록된 스패머에 대해 POST 데이터를 확인합니다. php CURL lib가 필요합니다.');
+
+
+/install/언어/english/install.php
+- 정의( "FILTER_FUNCTIONS", "필터 함수")가 추가되었습니다.
+
+/언어/english/global.php
+- 정의('_DBDATESTRING', 'Y-m-d')가 추가되었습니다.
+- 정의('_DBTIMESTRING', 'H:i:s')를 추가했습니다.
+- 정의('_DBTIMESTAMPSTRING', 'Y-m-d H:i:s')를 추가했습니다.
+
+/언어/english/pmsg.php
+- 정의('_MD_PM_READ', '이미 읽음')을 추가했습니다.
+
+/모듈/시스템/언어/english/admin.php
+- 정의("_AM_SYSTEM_UNINSTALL","제거")가 추가되었습니다.
+
+다음 항목도 참조하세요.
+/modules/profile/docs/lang_diff.txt
+
+===============================
+2011/11/17: 버전 2.5.4
+===============================
+
+/Frameworks/moduleclasses/moduleadmin/언어/english/main.php
+_AM_MODULEADMIN_CONFIG_DB
+_AM_MODULEADMIN_CONFIG_ADMIN
+
+===============================
+2011/10/10: 버전 2.5.4 RC
+===============================
+
+새 파일:
+모듈/pm/언어/english/help/help.html
+모듈/프로필/언어/영어/help/help.html
+모듈/보호자/언어/영어/help/help.html
+
+정의가 추가/삭제되었습니다.
+
+/언어/english/pmsg.php
+delete Define('_MD_PM_READ', '이미 읽음');
+
+/언어/영어/user.php
+- 정의('_US_SKYPE', '스카이프')를 추가했습니다.
+- Define('_US_FACEBOOK', 'Facebook')을 추가했습니다.
+
+/modules/pm/언어/english/main.php
+- 삭제된 Define("_MD_PM_RECEIVE","RECEIVE");
+- 삭제된 Define("_MD_PM_POST","POST");
+- 삭제된 Define("_MD_PM_READBOX","READBOX");
+- 삭제된 Define("_MD_PM_RSAVEBOX","Receive_SAVEBOX");
+- 삭제된 Define("_MD_PM_SENTBOX","SENTBOX");
+- 삭제된 Define("_MD_PM_PSAVEBOX","Post_SAVEBOX");
+- 삭제되었습니다. Define("_MD_PM_SAVED","성공적으로 저장되었습니다");
+- 삭제된 Define("_MD_PM_TOC","보낸 사람: ");
+- 삭제 Define("_MD_PM_UID","발신자 ID");
+
+/언어/english/findurs.php
+- 정의('_MA_USER_FACEBOOK', '페이스북 링크')를 추가했습니다. //해야 할 일
+- 정의 추가('_MA_USER_SKYPE', 'Skype 링크');//해야 할 일
+
+/modules/pm/언어/english/modinfo.php
+- 정의("_MI_PM_ABOUT", "정보")를 추가했습니다.
+
+/모듈/프로필/언어/english/admin.php
+- Define('_PROFILE_AM_ACTION', 'Action')을 추가했습니다.
+
+/모듈/프로필/언어/english/modinfo.php
+- 정의("_PROFILE_MI_ABOUT", "정보")를 추가했습니다.
+- 정의("_PROFILE_MI_HOME", "홈")이 추가되었습니다.
+
+
+/modules/system/언어/english/admin/preferences.php
+- 삭제된 Define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_GENERAL","일반 설정");
+- 삭제된 Define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_USERSETTINGS","사용자 정보 설정");
+- 삭제된 Define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_METAFOOTER","메타 태그 및 바닥글");
+- 삭제된 Define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_CENSOR","단어 검열 옵션");
+- 삭제된 Define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_SEARCH","검색 옵션");
+- ​​삭제된 Define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_MAILER","이메일 설정");
+- 삭제된 정의("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_AUTHENTICATION","인증 옵션");*/
+- 삭제된 Define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_GENERAL","A faire");
+- 삭제된 Define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_USERSETTINGS","A faire");
+- 삭제된 Define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_METAFOOTER","A faire");
+- 삭제된 Define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_CENSOR","A faire");
+- 삭제된 Define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_SEARCH","A faire");
+- 삭제된 Define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_MAILER","A faire");
+- 삭제된 Define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_AUTHENTICATION","공정");
+- 삭제된 Define("_MD_AM_LOADINGIMG", "디스플레이 로딩 중... 이미지?");
+- 삭제된 Define("_MD_AM_CHNGUTHEME", "모든 사용자 테마 변경");
+
+/모듈/시스템/언어/영어/admin/users.php
+- 정의 추가됨("_AM_SYSTEM_USERS_ACCEPT_EMAIL","관리자의 이메일 수락");
+
+- 삭제된 Define("_AM_SYSTEM_USERS_NAV_MANAGER","사용자 관리자");
+- 삭제된 Define("_AM_SYSTEM_USERS_USERPOST","사용자 게시물");
+- 삭제된 Define("_AM_SYSTEM_USERS_STORIES","Stories");
+- 삭제된 Define("_AM_SYSTEM_USERS_COMMENTS","댓글");
+- 삭제됨 Define("_AM_SYSTEM_USERS_PTBBTSDIYT","위 사용자 게시물 정보가 실제 상태를 나타내지 않는 것 같다고 생각되면 아래 버튼을 눌러 데이터를 동기화하세요.");
+- 삭제된 Define("_AM_SYSTEM_USERS_CNGTCOM","전체 댓글을 가져올 수 없습니다.");
+- 삭제된 Define("_AM_SYSTEM_USERS_CNGTST","전체 스토리를 가져올 수 없습니다.");
+- 삭제된 Define("_AM_SYSTEM_USERS_LIST","List");
+- 삭제된 Define("_AM_SYSTEM_USERS_USERPOST","사용자 게시물");
+- 삭제된 Define("_AM_SYSTEM_USERS_STORIES","Stories");
+- 삭제된 Define("_AM_SYSTEM_USERS_COMMENTS","댓글");
+- 삭제됨 Define("_AM_SYSTEM_USERS_PTBBTSDIYT","위 사용자 게시물 정보가 실제 상태를 나타내지 않는다고 생각되면 아래 버튼을 눌러 데이터를 동기화하세요.");
+- 삭제된 Define("_AM_SYSTEM_USERS_CNGTCOM","모든 댓글을 가져올 수 없습니다.");
+- 삭제된 Define("_AM_SYSTEM_USERS_CNGTST","모든 스토리를 가져올 수 없습니다.");
+- 삭제된 Define("_AM_SYSTEM_USERS_LIST","List");
+
+xoops_lib/modules/protector/언어/english/admin.php
+- 정의("_AM_ADV_REGISTERGLOBALS2","그리고 아래 줄에 배치:")를 추가했습니다.
+
+변경된 파일:
+
+/modules/system/언어/english/admin/users.php (맘바)/
+/언어/영어/mail_template/activated.tpl
+/언어/영어/mail_template/adminactivate.tpl
+/언어/영어/mail_template/lostpass1.tpl
+/언어/영어/mail_template/lostpass2.tpl
+/언어/영어/mail_template/register.tpl
+/언어/영어/mail_template/welcome.tpl
+/modules/system/언어/english/admin/avatars.php
+/modules/system/언어/english/admin/banners.php
+/modules/system/언어/english/admin/blocksadmin.php
+/modules/system/언어/english/admin/comments.php
+/modules/system/언어/english/admin/preferences.php
+/modules/system/언어/english/admin/userrank.php
+/모듈/시스템/언어/영어/admin/users.php
+/modules/system/언어/english/help/mailusers.html
+/modules/system/언어/english/help/preferences.html
+/모듈/시스템/언어/english/admin.php
+/modules/system/언어/english/blocks.php
+/모듈/시스템/언어/english/modinfo.php
+/modules/system/themes/default/언어/english/admin.php
+/modules/system/themes/zetadigme/언어/english/admin.php
+/themes/suico/언어/english/main.php
+/themes/zetagenesis/언어/english/main.php
+
+
+===============================
+2011/10/05: 버전 2.5.4 베타
+===============================
+- 여러 영어 번역이 업데이트되었습니다(DCrussader/Mamba).
+- 삭제된 언어/영어/calendar.php _CAL_DEF_DATE_FORMAT
+- 삭제된 언어/영어/calendar.php _CAL_TT_DATE_FORMAT
+- 삭제된 모듈/시스템/언어/영어/admin/users.php _AM_SYSTEM_USERS_NAV_MANAGER
+- 삭제된 모듈/시스템/언어/영어/admin/preferences.php _MD_AM_LOADINGIMG
+- 삭제된 모듈/시스템/언어/영어/admin/preferences.php _MD_AM_CHNGUTHEME
+- 삭제된 모듈/pm/언어/english/admin/main.php _MD_PM_RECEIVE, _MD_PM_POST, _MD_PM_READBOX, _MD_PM_RSAVEBOX, _MD_PM_SENTBOX, _MD_PM_PSAVEBOX, _MD_PM_SAVED, _MD_PM_TOC
+- /modules/profile/언어/english/admin.php _PROFILE_AM_ACTION 추가됨
+- /modules/profile/언어/english/main.php _PROFILE_MI_ABOUT 추가됨
+- /modules/profile/언어/english/main.php _PROFILE_MI_HOME 추가됨
+- /modules/pm/언어/english/modinfo.php _MI_PM_ABOUT 추가됨
+- 모듈/시스템/언어/영어/admin/users.php _AM_SYSTEM_USERS_FACEBOOK, _AM_SYSTEM_USERS_SKYPE 추가
+- 언어/영어/user.php 추가 _US_SKYPE, _US_FACEBOOK
+
+xoops_lib/modules/protector/언어/english/modinfo.php
+- 정의($constpref.'_STOPFORUMSPAM_ACTION','포럼 스팸 중지')를 추가했습니다.
+- Define($constpref.'_STOPFORUMSPAM_ACTIONDSC','www.stopforumspam.com 데이터베이스에 등록된 스패머에 대해 POST 데이터를 확인합니다. php CURL lib가 필요합니다.');
+
+
+
+===============================
+2011/09/06: 버전 2.5.2 RC
+===============================
+ - 언어/영어/misc.php 추가 _MSC_CLICK_TO_OPEN_IMAGE, _MSC_RESIZED_IMAGE, _MSC_ORIGINAL_IMAGE
+ - 언어 추가/영어/pmsg.php _MD_PM_SURE_TO_DELETE, _MD_PM_READ
+ - 모듈 추가/pm/언어/english/admin/main.php _MD_PM_READ, _MD_PM_SUBJECT_ICONS
+ - 모듈\시스템/언어/english/admin/tplsets.php _AM_SYSTEM_TEMPLATES_SET
+ - 모듈/시스템/테마/기본/언어/영어/admin/admin.php _OXYGEN_XOOPSENGINE을 제거했습니다.
+ - 모듈/시스템/언어/영어/admin/blocksadmin.php _AM_SYSTEM_BLOCKS_SAVE 제거됨
+ - 언어 추가/영어/calendar.php _CAL_DEF_DATE_FORMAT
+ - 언어 추가/영어/calendar.php _CAL_TT_DATE_FORMAT
+
+===============================
+2011/03/15: 버전 2.5.1 RC
+===============================
+
+추가된 언어 상수:
+  모듈/시스템/언어/영어/admin/images.php _AM_SYSTEM_IMAGES_URL
+  모듈/시스템/테마/기본/언어/영어/admin/admin.php _OXYGEN_XOOPSENGINE
+
+수정된 언어 상수:
+  모듈/시스템/테마/기본/언어/영어/admin/admin.php _OXYGEN_ABOUT_TEXT, _OXYGEN_WEBSITE
+  모듈/시스템/언어/영어/helper/help_center.html, 모듈관리자.html
+
+제거된 언어 상수:
+  모듈/시스템/테마/기본/언어/english/admin/admin.php _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_LICENSE, _OXYGEN_SOURCEFORGE_TEXT, _OXYGEN_POWERED_BY
+  모듈/시스템/테마/기본/언어/english/admin/admin.php _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_LICENSE, _OXYGEN_SOURCEFORGE_TEXT, _OXYGEN_POWERED_BY
