@@ -1,0 +1,80 @@
+<?php
+/**
+ * @copyright       (c) 2000-2026 XOOPS Project (https://xoops.org)
+ * @license             GNU GPL 2 (https://www.gnu.org/licenses/gpl-2.0.html)
+ * _LANGCODE    ko
+ * _CHARSET     UTF-8
+ */
+define('_MI_SYSTEM_NAME', '시스템관리');
+define('_MI_SYSTEM_DESC', '사이트의 핵심부분의 설정을 합니다.');
+define('_MI_SYSTEM_BNAME2', '등록회원메뉴');
+define('_MI_SYSTEM_BNAME3', '로그인');
+define('_MI_SYSTEM_BNAME4', '검색');
+define('_MI_SYSTEM_BNAME5', '등록대기콘텐츠');
+define('_MI_SYSTEM_BNAME6', '메인메뉴');
+define('_MI_SYSTEM_BNAME7', '사이트정보');
+define('_MI_SYSTEM_BNAME8', '온라인 중인 사용자');
+define('_MI_SYSTEM_BNAME9', '투고수랭킹');
+define('_MI_SYSTEM_BNAME10', '신규등록회원');
+define('_MI_SYSTEM_BNAME11', '최근 코멘트');
+define('_MI_SYSTEM_BNAME12', '이벤트통지설정');
+define('_MI_SYSTEM_BNAME13', '테마선택');
+define('_MI_SYSTEM_ADMENU1', '배너관리');
+define('_MI_SYSTEM_ADMENU2', '블록관리');
+define('_MI_SYSTEM_ADMENU3', '그룹관리');
+define('_MI_SYSTEM_ADMENU5', '모듈관리');
+define('_MI_SYSTEM_ADMENU6', '일반설정');
+define('_MI_SYSTEM_ADMENU7', '얼굴아이콘관리');
+define('_MI_SYSTEM_ADMENU9', '등록회원등급관리');
+define('_MI_SYSTEM_ADMENU10', '등록회원관리');
+define('_MI_SYSTEM_ADMENU11', '사용자에게 이메일');
+define('_MI_SYSTEM_ADMENU12', '등록회원검색');
+define('_MI_SYSTEM_ADMENU13', '이미지관리');
+define('_MI_SYSTEM_ADMENU14', '아바타관리');
+define('_MI_SYSTEM_ADMENU15', '템플렛관리');
+define('_MI_SYSTEM_ADMENU16', '코멘트관리');
+define('_MI_SYSTEM_PREFERENCE_BREAK_GENERAL', '일반 설정');
+define('_MI_SYSTEM_PREFERENCE_TIPS', '온라인으로 도움을 받으시겠습니까?');
+define('_MI_SYSTEM_PREFERENCE_TIPS_DSC', '팁과 온라인 도움말을 제공합니다.');
+define('_MI_SYSTEM_PREFERENCE_ICONS', '아이콘');
+define('_MI_SYSTEM_PREFERENCE_BREADCRUMB', '탐색경로');
+define('_MI_SYSTEM_PREFERENCE_BREAK_ACTIVE', '활성 섹션');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_AVATARS', '활성 아바타');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_BANNERS', '활성 배너');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_BLOCKSADMIN', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_COMMENTS', '활성 댓글');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_FILEMANAGER', '활성 파일 관리자');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_GROUPS', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_IMAGES', '활성 이미지 관리자');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MAILUSERS', '활성 이메일 사용자');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MODULESADMIN', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_PREFERENCES', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_SMILIES', '활성 이모티콘');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_TPLSETS', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_USERRANK', '활성 사용자 랭크');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_USERS', '활성 사용자');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MAINTENANCE', '활성 유지보수');
+define('_MI_SYSTEM_PREFERENCE_BREAK_PAGER', '관리에 표시할 행 수');
+define('_MI_SYSTEM_PREFERENCE_AVATARS_PAGER', '페이지당 표시할 아바타 수');
+define('_MI_SYSTEM_PREFERENCE_BANNERS_PAGER', '페이지당 표시할 배너 수');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_PAGER', '페이지당 표시할 댓글 수');
+define('_MI_SYSTEM_PREFERENCE_GROUPS_PAGER', '페이지당 표시할 그룹 수');
+define('_MI_SYSTEM_PREFERENCE_IMAGES_PAGER', '페이지당 표시할 이미지 수');
+define('_MI_SYSTEM_PREFERENCE_SMILIES_PAGER', '페이지당 표시할 스마일 수');
+define('_MI_SYSTEM_PREFERENCE_USERRANKS_PAGER', '페이지당 표시할 순위 수');
+define('_MI_SYSTEM_PREFERENCE_USERS_PAGER', '페이지당 표시할 사용자 수');
+define('_MI_SYSTEM_PREFERENCE_BREAK_EDITOR', '편집자 설정');
+define('_MI_SYSTEM_PREFERENCE_BLOCKS_EDITOR', '블록 편집기:');
+define('_MI_SYSTEM_PREFERENCE_BLOCKS_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_EDITOR', '댓글 편집기:');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_GENERAL_EDITOR', '모든 모듈 편집기:');
+define('_MI_SYSTEM_PREFERENCE_GENERAL_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_ANONPOST', '');
+define('_MI_SYSTEM_PREFERENCE_REDIRECT', '');
+define('_MI_SYSTEM_PREFERENCE_JQUERY_THEME', 'jQuery 테마');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_DISABLE', '일시적으로 비활성화');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_EMAIL', '이메일');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_PM', '개인 메시지');
+define('_MI_SYSTEM_MENUS_ACTIVE', '메뉴 시스템 활성화');
+define('_MI_SYSTEM_MENUS_ACTIVE_DESC', '사이트 탐색을 위한 내장 메뉴 관리 시스템 활성화');
